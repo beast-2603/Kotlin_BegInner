@@ -5,6 +5,7 @@ import android.os.Bundle
 import androidx.recyclerview.widget.RecyclerView
 import com.example.affirmations.adapter.ItemAdapter
 import com.example.affirmations.data.Datasource
+import kotlinx.android.synthetic.main.activity_main.*
 
 
 class MainActivity : AppCompatActivity() {
@@ -15,5 +16,6 @@ class MainActivity : AppCompatActivity() {
         val recyclerView = findViewById<RecyclerView>(R.id.recycler_view)
         recyclerView.adapter = ItemAdapter(this, myDataSet)
         recyclerView.setHasFixedSize(true)
+
     }
 }
